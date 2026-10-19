@@ -20,6 +20,17 @@ namespace TestPruebasUnitariasApp
                 long resultado = Funciones.CalcularFactorial(n);
                 Assert.AreEqual(esperado, resultado);
             }
+            [TestMethod]
+            [DataRow(null, false)]            // nula
+            [DataRow("", false)]              // vacía
+            [DataRow("12345#7", false)]       // longitud < 8
+            [DataRow("12345678", false)]      // no contiene '#'
+            [DataRow("12345678#", true)]      // válida
+            public void EsContrasenyaValida_VariosCasos(string contrasenya, bool esperado)
+            {
+                bool resultado = Funciones.EsContrasenyaValida(contrasenya);
+                Assert.AreEqual(esperado, resultado);
+            }
         }
     }
 }
