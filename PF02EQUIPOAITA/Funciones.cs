@@ -28,5 +28,11 @@ namespace PF02EQUIPOAITA
             }
             return result;
         }
+        public static bool EsContrasenyaValida(string contrasenya)
+        {
+            return !string.IsNullOrEmpty(contrasenya) &&
+                   contrasenya.Length >= 8 &&
+                   contrasenya.Contains("#");
+        }
     }
 }
