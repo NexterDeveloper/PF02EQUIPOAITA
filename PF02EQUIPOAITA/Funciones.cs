@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PF02EQUIPOAITA
 {
-    public class ValidadorUsuario
+    public class Funciones
     {
         public const string EDAD_0_MESSAGE = "Evidentemente no eres mayor de edad";
         public const string EDAD_NEGATIVE_MESSAGE = "Todavía no has nacido";

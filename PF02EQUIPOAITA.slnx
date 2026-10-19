@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="PF02EQUIPOAITA/PF02EQUIPOAITA.csproj" />
+  <Project Path="TestPruebasUnitariasApp/TestPruebasUnitariasApp.csproj" Id="5a4f6074-6cfc-4dcf-bf31-8aaea9b36f81" />
 </Solution>
